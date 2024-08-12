@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+   
+    background-image: url(images/bg4.jpg);
+    opacity:0.8;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+}
+.login{
+    background: grey;
+    width: 370px;
+    height:340px;
+    opacity: 0.79;
+    padding:35px;
+    border:1px solid grey;
+    border-radius: 15px;
+    
+}
+.login h2{
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight:bolder;
+}
+.login input:not(input[type=submit]):not(input[type=checkbox]){
+    width:95%;
+    height: 38px;
+    outline: none;
+    border:1px solid white;
+    border-radius: 6px;
+}
+.login input[type=submit]{
+    width:95%;
+    height: 39px;
+    outline: none;
+    background-color: green;
+    border:none;
+    color:white;
+    border:1px solid green;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login input[type=submit]:hover
+{
+   
+    background-color: rgb(121, 214, 13);
+    
+}
+
+@media screen and (max-width:700px){
+    .login{
+    flex-direction: column;
+    }
+}
+.login a{
+    text-decoration: none;
+    font-weight: 400;
+}
